@@ -1,0 +1,132 @@
+// Task 1
+
+var initials = 'MD';
+let last3Digits = 455;
+const studentKey = `${initials.toUpperCase()}-${455}`;
+console.log(`Student Key:`, studentKey);
+
+// Task 2
+
+// name (String):firstName
+// idSuffix(number):455
+// course(string):"CPAN 113"
+// isActive(boolean):true
+// skills(array of strings):include at least 3 items ("for example HTML","JavaScript","Problem Solving")
+// skills =["HTML",JavaScript","Problem Solving")]
+// target (object):include weeklyHours(number) and goal (string)
+// targets ={weeklyHours:10, goal:"Learn JavaScript"}
+// log 
+
+let name ="Michael";
+let idSuffix = 455;
+let course = "CPAN 113";
+let isActive = true;
+let skills = ["HTML","JavaScript","Problem Solving"];
+let target = {weeklyhours:10, goal:"Learn JavaScript"};
+console.log (`Profile type checks: name=${typeof(name)}, idSuffix=${typeof(idSuffix)}, skillsIsArray=${Array.isArray(skills)}`);
+
+
+// Task 3 Mutability check (var vs let vs const)
+// Demonstrate each of the following and log what you observe:
+// • Update initials (var) to a different value.
+// • Update last3Digits (let) by adding 1.
+// • Attempt to reassign studentKey (const) and observe the error (comment the line after you test).
+// • Create a const object (const labConfig = { term: "Winter 2026" }) and update ONE property value
+// successfully.
+// Your submission must clearly show (in comments) what happened when you attempted the const
+// reassignment
+
+initials = "NM";
+last3Digits = 4555;
+//studentKey = `${initials.toUpperCase()}-${4557}`; TypeError: Assignment to constant variable.
+
+// // Task 4 Seeded numbers and a mini receipt (arithmetic)
+// Using last3Digits, generate three item prices for a fictional campus cafe receipt. Your prices must be
+// different for each student and must be computed (not typed in).
+// • Create three numbers: itemA, itemB, itemC using formulas that depend on last3Digits.
+// • Compute subtotal = itemA + itemB + itemC.
+// • Compute tax at 13% (Ontario HST): tax = subtotal * 0.13.
+// • Compute total = subtotal + tax.
+// • Round tax and total to 2 decimals (use toFixed for display).
+// Example price formulas (you may use these or create your own):
+
+ let itemA = (last3Digits % 10) + 2.25;
+ let itemB = ((last3Digits % 7) * 0.75) + 1.50;
+ let itemC = ((last3Digits % 5) * 1.10) + 3.10;
+
+console.log(`Receipt: A=$${itemA}, B=$${itemB}, C=$${itemC}`);
+let subtotal = itemA + itemB +itemC;
+let tax = subtotal * 0.13;
+let total = subtotal + tax;
+console.log(`Subtotal=$${subtotal}, Tax=$${tax}, Total=$${total}`);
+
+// Task 5 Comparisons that matter (== vs ===)
+// Create two variables based on last3Digits:
+// • asNumber: the number value of last3Digits
+
+
+let asNumber = 455;
+let asText = "455";
+console.log(`Equality: == ${asNumber == asText}, === ${asNumber === asText}`);
+
+// Task 6 Decision logic (if/else and switch)
+// Part A: if/else
+// • Create a variable budget based on last3Digits (for example: budget = (last3Digits % 10) + 10).
+// • Compare Total to budget value. If total is within budget, log: "Within budget"; otherwise log: "Over
+// budget".
+// • Also log how much under or over (use Math.abs to display a positive difference).’
+// Part B: switch
+// Create a variable theme based on last3Digits % 4. Use a switch statement to print a different message for
+// each case (0, 1, 2, 3). Each message should be a short, fun line related to learning JavaScript.
+
+
+
+let budget = (last3Digits % 10) + 10
+if (total <= budget){
+   console.log(`Budget check: Within budget (under by $${budget-total}`);
+
+}
+else{
+    console.log(`Budget check: over budget (exceeded by $${budget-total}`);
+
+}
+let theme = last3Digits % 4;
+
+
+    switch (theme) {
+        case 0:
+            console.log('Theme:', "JavaScript is a fun easy to learn language")
+            break;
+        case 1:
+            console.log('Theme:', "JavaScript is native to all broswer")
+            break;
+        case 2:
+            console.log('Theme:', "JavaScript is the language of the web")
+            break;
+        case 0:
+            console.log('Theme:', "JavaScript is cool")
+            break;
+        default:
+            break;    
+    }
+
+
+// Task 7 Required Lab Signature
+// Create a Lab Signature so your submission can be verified quickly. Your Lab Signature must be deterministic
+// and must include last3Digits.
+// • Create signatureNumber = (last3Digits * 7) + Math.floor(total).
+// • Create labSignature = `${studentKey}-${signatureNumber}`.
+// • Print it exactly like this: "Lab Signature: <value>"
+// let signatureNumber = (last3Digits * 7) + Math.floor(total);
+// const labSignature = `${studentKey}-${signatureNumber}`;
+// console.log('Lab Signature:', labSignature);
+
+let signatureNumber = (last3Digits * 7) + Math.floor(total);
+const labSignature = `${studentKey}-${signatureNumber}`;
+console.log('Lab Signature:', labSignature);
+
+
+
+
+
+

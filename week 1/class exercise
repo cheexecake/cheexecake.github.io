@@ -1,0 +1,10 @@
+let x = 5;
+let y = 10;
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+
+
+var name = "dybala";
+console.log(x+=5); // x is now 10
+console.log(x-=3);

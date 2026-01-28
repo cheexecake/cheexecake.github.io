@@ -1,0 +1,4 @@
+var = 'MD';
+let = 455;
+const studentKey = '${MD.}()-${455};
+console.log('studentKey')
