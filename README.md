@@ -1,1 +1,15 @@
-# cheexecake.github.io
+# EMT Resume Assistance Tool
+
+This tool is aimed at young adults and new grads to help them curate their resumes to stand a better chance in the job market.
+
+# Installation
+
+Running in the browser
+
+# Usage
+
+Users are to put write their resumes and the job description and our tool will suggest changes to the user to help better fit the job description/
+
+# Authors
+
+Emanuel, Micheal, Thando
