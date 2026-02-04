@@ -1,0 +1,20 @@
+html{
+
+
+
+    background-color: white;
+
+}
+
+body{
+
+    border: solid black;
+    padding: auto;
+}
+
+header{
+    background-color: lightblue;
+    height: 138px;
+    border-bottom: 2px solid;
+}
+
