@@ -13,3 +13,5 @@ Users are to put write their resumes and the job description and our tool will s
 # Authors
 
 Emanuel, Micheal, Thando
+
+This is a test of my git pushing, pulling and merging
