@@ -12,6 +12,10 @@ Users are to put write their resumes and the job description and our tool will s
 
 # Authors
 
+<<<<<<< HEAD
 Emanuel, Micheal, Thando
 
 This is a test of my git pushing, pulling and merging
+=======
+Emmanuel, Micheal, Thando
+>>>>>>> cba93a0e553dc4587c4c72500f9e025229b89e05
