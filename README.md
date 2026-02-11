@@ -12,4 +12,4 @@ Users are to put write their resumes and the job description and our tool will s
 
 # Authors
 
-Emanuel, Micheal, Thando
+Emmanuel, Micheal, Thando
