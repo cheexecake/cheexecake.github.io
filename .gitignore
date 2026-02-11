@@ -2,4 +2,5 @@
 *.log
 
 # Ignore temporary files
-kuzon_branch/
+kuzon_branch
+cheexecake.github.io/
